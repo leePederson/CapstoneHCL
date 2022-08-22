@@ -23,6 +23,16 @@ public class Product {
 	
 	public Product() {}
 	
+	public Product(int prodCat, int prodCount, String prodName, String prodUpc, String prodImg, BigDecimal d, boolean prodStatus) {
+		this.prodCategory = prodCat;
+		this.prodCount = prodCount;
+		this.prodName = prodName;
+		this.prodUpc=prodUpc;
+		this.prodImage=prodImg;
+		this.prodPrice=d;
+		this.productionStatus=prodStatus;
+	}
+	
 	@Column(name="prod_category", nullable = false, unique = false)
 	private int prodCategory;
 	
